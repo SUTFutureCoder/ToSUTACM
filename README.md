@@ -64,7 +64,7 @@ Git使用非常简单，想不想学我就不管了。
 注册[杭电账号](http://acm.hdu.edu.cn/)  
 完成2001-2025题，如果完成请延长到2060题  
 以上做完了就做[POJ基础题](http://www.cppblog.com/Uriel/articles/101596.html)  
-[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/acm_newbee_oj.pdf)  
+[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_newbee_oj.pdf)  
 
 ### 工程锻炼
 这是13年ACM开发组训练内容，web开发对于自制整个工程是比较容易上手的，完全可以用于日常开发、比赛、毕设上。  
@@ -78,12 +78,12 @@ Git使用非常简单，想不想学我就不管了。
 - PHP入门
 - PHP和MySQL交互
 - HTML、CSS、JS  
-具体请看[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/acm_newbee_dev.zip)  
+具体请看[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_newbee_dev.zip)  
 
 ### 12级ACM训练日常
 不只是大一假期集训、迎新吃火锅、CS对抗赛  
 估计现在连最基本的日常训练早就丢了吧……  
-[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/acm_train.pdf)  
+[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_train.pdf)  
 
 ## 大二上
 ### 为啥把大二拆成两个？
