@@ -74,7 +74,7 @@ Git使用非常简单，想不想学我就不管了。
 注册[杭电账号](http://acm.hdu.edu.cn/)  
 完成2001-2025题，如果完成请延长到2060题  
 以上做完了就做[POJ基础题](http://www.cppblog.com/Uriel/articles/101596.html)  
-[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_newbee_oj.pdf)  
+具体请看[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_newbee_oj.pdf)  
 
 ### 工程锻炼
 这是13年ACM开发组训练内容，web开发对于自制整个工程是比较容易上手的，完全可以用于日常开发、比赛、毕设上。  
@@ -283,7 +283,8 @@ PPT来不及提交了也没关系，做个能翻页、背景是图片的网页�
 - 不修电脑  
 - 问之前自己先百度谷歌一圈  
 - 别问在不在，有话就说  
-- 可能后半夜回复    
+- 可能后半夜回复   
+ 
 [*Chen](https://github.com/SUTFutureCoder/resume) 
 
 ## 最后
