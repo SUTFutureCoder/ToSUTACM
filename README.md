@@ -117,6 +117,7 @@ Git使用非常简单，想不想学我就不管了。
 ### 一段弱校ACM奋斗史
 努力是绝不会背叛人的  
 激励了我和无数ACMER的[文章](http://acmicpc.info/archives/369)  
+原始地址可能打开较慢，[博客园链接](https://www.cnblogs.com/Fatedayt/archive/2011/09/15/2177996.html)  
 
 ### 准备好大二四处征战吧！
 大二是参加各大比赛的黄金时期。  
