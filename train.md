@@ -66,20 +66,33 @@ SAMS出的××入门经典是我大部分技术入门第一本书
 
 ## 2018.08.16
 ### 1.Github账号创建
-Github是未来你的第0号简历，越早创建、把练习和个人开发项目放到上面越好。
+Github是未来你的第0号简历，越早创建、把练习和个人开发项目放到上面越好。  
+一般面试官如果看到你的简历上附有Github链接，则会点进去看看你的绿点（推代码情况）和项目情况。记住，潸然泪下的万字求职信不如一行高质量代码。而最直观展示你学习、潜力、探索、实践成果，就是Github。  
 #### 1.需要我做什么？
-1. 访问[github](http://github.com/)，创建一个账号。
-2. 下载github客户端，搜素安装方法
-3. 按照文档，创建rsa_key并添加到github上[创建rsakey](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),[添加key](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-4. github上新建一个库（https://github.com/new），名字随意。推荐叫practice
+1. 访问[github](http://github.com/)，创建一个账号。  
+2. 下载github客户端，搜素安装方法  
+3. 按照文档，创建rsa_key并添加到github上[创建rsakey](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),[添加key](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)  
+4. github上新建一个库（https://github.com/new），名字随意。推荐叫practice  
 
-下面针对使用命令行界面同学，如果使用图形化界面，请自行搜索图形化github使用。
+下面针对使用命令行界面同学，如果使用图形化界面，请自行搜索图形化github使用。  
 
-1. 使用```git clone```，将库克隆拉到本地
-2. 在本地新的库随意创建一个文件
-3. 使用```git add -A```,```git commit -m '本次推送内容'```,```git push```三个命令，将文件推到github上面。
+1. 使用```git clone```，将库克隆拉到本地  
+2. 在本地新的库随意创建一个文件  
+3. 使用```git add -A```,```git commit -m '本次推送内容'```,```git push```三个命令，将文件推到github上面。 
+
+无论图形化还是命令行方法，都需要掌握以下命令，是面试重点。  
+学习```git add```,```git commit```,```git push```,```git pull```,```git branch```,```git checkout```,```git log```,```git reset```含义及使用   
 
 #### 2.群作业回复已创建的github账号。
 
 #### 3.持续跟着08.15继续入门语言
-并且把跟着教程学习代码放到github上，以后所有练习和个人项目代码都需要放上面。
+并且把跟着教程学习代码放到github上，以后所有练习和个人项目代码都需要放上面。  
+
+### 2.继续学习```8.15```选择的语言
+创建Github相关比较简单，如果已完成```1```的内容，剩下的时间请将今天的练习代码push到github上。  
+
+### 3.附加任务 安装Ubuntu18.04 desktop
+如果你使用的是MACOS，那可以忽略掉这一部分。  
+为什么要用Linux/Unix而不用Windows呢？因为所有的大型互联网公司服务器都运行在非windows操作系统上，日常维护、查线上问题都需要熟练掌握linux，没有掌握Linux命令直接过不了第一道简历筛选关。  
+可以自行搜索virtualbox安装ubuntu方法，虽然可能虚拟机运行比较慢，但一上来就让你装双系统或直接放弃windows全部使用Linux作为日常操作系统不是很友好。所以今天先安装上Ubutnu，可以自己随便操作操作，适应一下新操作系统。最好能运行terminal终端试一试能否用命令行控制你的Linux。  
+
