@@ -72,7 +72,7 @@ Github是未来你的第0号简历，越早创建、把练习和个人开发项�
 1. 访问[github](http://github.com/)，创建一个账号。  
 2. 下载github客户端，搜素安装方法  
 3. 按照文档，创建rsa_key并添加到github上[创建rsakey](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),[添加key](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)  
-4. github上新建一个库（https://github.com/new），名字随意。推荐叫practice  
+4. github上[新建一个库](https://github.com/new)，名字随意。推荐叫practice  
 
 下面针对使用命令行界面同学，如果使用图形化界面，请自行搜索图形化github使用。  
 
