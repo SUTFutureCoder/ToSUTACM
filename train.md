@@ -1,12 +1,12 @@
 # 工大ACM15天训练计划（工程实践方向）  
 
 ## 15天计划池
-+ 概论
-+ Ubuntu安装，基础命令熟悉
-+ Github账号创建
-+ 后端语言基础入门
++ ✔️概论
++ ✔️Ubuntu安装，基础命令熟悉
++ ✔️Github账号创建
++ ✔️后端语言基础入门
 + 前端入门
-+ SQL使用入门
++ ✔️SQL使用入门
 + 找到自己发展方向和兴趣点
 + 做自己喜欢的项目（没有就增删改查和带登录的博客系统）
 + 面向企业技术栈搭建
@@ -136,3 +136,167 @@ Linux命令是面试重点，而且工作后几乎每天都会使用。
 5. 尝试安装mysql相关工具。（提前熟悉）  
 
 
+## 2018.08.18
+### 1.安装MySQL
+推荐在Ubuntu上使用``sudo apt install mysql-server``来进行命令行安装。  
+非Ubuntu系统也可以尝试安装。  
+
+### 2.熟悉SQL语句
+从这里开始，禁止使用图形化操作界面。一律使用命令行操作。  
+今天需要熟悉以下命令  
+创建数据库
+``CREATE DATABASE``  
+使用数据库
+``USE``  
+创建数据表  
+``CREATE TABLE``
+增
+``INSERT``
+删
+``DELETE``
+改
+``UPDATE``
+查
+``SELECT``
+删除表\库
+``DROP``
+修改表结构
+``ALTER``
+
+这里有样例，可以直接执行体验一下，然后思考为什么这么写：
+创建数据库  
+``CREATE DATABASE test DEFAULT CHARSET utf8 COLLATE utf8_general_ci;``  
+使用数据库  
+``use test``
+
+创建数据表
+CREATE TABLE `testa` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint(20) unsigned NOT NULL DEFAULT 0 COMMENT '订单id',
+  `pass_uid` bigint(20) unsigned NOT NULL DEFAULT 0 COMMENT '用户编码',
+  `user_name` varchar(64) NOT NULL DEFAULT "" COMMENT '用户名',
+  `total_amount` bigint(20) unsigned NOT NULL DEFAULT 0 COMMENT '单笔订单总金额',
+  `status` tinyint(4) DEFAULT 1 COMMENT '状态',
+  `order_time` bigint(20)  unsigned NOT NULL DEFAULT 0 COMMENT '下单时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `order_id` (`order_id`),
+  KEY `p_s_o` (`pass_uid`,`status`,`order_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+增加数据
+``INSERT testa (order_id, pass_uid, user_name, total_amount) VALUE(123456, 654321, "测试用户", 200)``
+
+查询数据
+``SELECT * FROM testa WHERE pass_uid=654321``
+
+修改数据
+``UPDATE testa SET user_name="我修改了我自己" WHERE user_name="测试用户"``
+
+删除数据
+``DELETE FROM testa WHERE order_id=123456``
+
+删除表
+``DROP TABLE testa``  
+
+删除库
+``DROP DATABASE test``
+
+### 3.思考为什么要设置成UTF8
+数据库中文乱码是新手必经之路，不要慌。  
+
+### 4.进阶SQL语句
+GROUP BY HAVING掌握较为困难，但却能解决大多数聚类的问题，我面试第一题就是让写SQL，写不出来的我就直接再见送走了。    
+``GROUP BY .... HAVING``
+聚类函数   
+``COUNT``
+``SUM``
+``AVG``
+
+综合练习：
+这里是我面试真题：  
+数据库中按如下语句建表
+CREATE TABLE `waimai` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint(20) unsigned NOT NULL COMMENT '订单id',
+  `pass_uid` bigint(20) unsigned NOT NULL COMMENT '用户编码',
+  `total_amount` bigint(20) unsigned NOT NULL COMMENT '单笔订单总金额',
+  `status` tinyint(4) DEFAULT 1 COMMENT '状态',
+  `order_time` bigint(20)  unsigned NOT NULL COMMENT '下单时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `order_id` (`order_id`),
+  KEY `p_s_o` (`pass_uid`,`status`,`order_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+请使用SQL语句找出status为1、order_time大于1500000000、至少下过两单的pass_uid的历史下单总额
+
+
+### 今天我要做什么？
+1.安装MySQL
+2.学习SQL基础语句
+3.深入学习SQL语句
+4.提交感想和心得作业
+
+### 附：SQL语句快速入门
+[链接](http://www.w3school.com.cn/sql/index.asp)
+看所有基础教程  
+高级教程中``TOP`` ``LIKE`` ``通配符`` ``IN`` ``BETWEEN`` ``JOIN`` ``INNER JOIN`` ``LEFT JOIN`` ``RIGHT JOIN`` ``UNIQUE`` ``DROP`` ``ALTER`` 
+函数中
+``AVG`` ``COUNT`` ``SUM`` ``GROUP BY`` ``HAVING``
+
+从学习SQL第一天起，就必须养成这样的习惯：禁止一切使用SQL计算行为，所有计算请放到业务代码中进行。  
+
+## 2018.08.19
+### 1.使用程序进行数据库增删改查
+今天是个综合练习，请结合从第一天起的所有经验进行开发。
+可能难度比较大一些，但能够用程序对数据库进行增删改查是关键一步。无论前后端，以后写接口还是写整个工程都会用到的必备入行技能，而且会伴随大半个职业生涯。  
+暂且可以不用管什么面向对象，直接一个流程下去对数据库进行增删改查即可。  
+不同的语言可能需要不同的拓展，如果是PHP需要apt安装Mysqli拓展，如果是JAVA则需要在lib中引入jdbc系列库。这地方如果不太清楚请请教群里学长。 
+参考链接：
+[PHP数据库交互](http://www.runoob.com/php/php-mysql-intro.html)  
+[JAVA数据库交互](http://www.runoob.com/java/java-mysql-connect.html)
+JAVA数据库交互最好还是看看网上的样例吧 
+
+### 2.将``1``中的代码推送到github上
+如果还没有研究好github的同学请尽快搞定~  
+``git add -A``
+``git commit -m '和数据库交互'``
+``git push``
+
+### 3.需要我做什么
+1. 搜索你选择的语言如何进行增删改查。当然可以搜索样例开发过程和代码，模仿代码也是正确的最快入门方法。
+2. 将今天的代码推到github上，并在任务中回复github链接
+3. 虽然今天任务描述比较少，但却是关键一步。今天的任务会根据完成情况决定明天是否有新的任务。
+
+## 2018.08.20
+### 1.使用JSON格式输出数据库查询结果
+昨天内容可能有点多，今天的任务非常简单，之前没有完成的任务也请赶上。   
+目前互联网公司很少用后端渲染前端，而是为了提高复用性和提供微服务，使用json格式和前端或其他模块进行数据交换。所以掌握如何使用json格式输出就相当于学到了接口的精髓。  
+各个语言都会有json库，例如PHP，直接调用json_encode、GO语言用simplejson库即可将字符串、数字、数组转换为json格式。  
+当然json也可以手动编写，语法也非常简单。有时候得到一长串json，可以在线、浏览器console或使用插件进行简单格式化。
+
+[json是个啥](http://www.runoob.com/json/json-tutorial.html)  
+[json格式化](https://www.json.cn/)  
+[chrome FE万能工具插件](https://github.com/zxlie/FeHelper)  
+
+### 2.需要我做什么
+1. 使用程序进行数据库查询，并将查询结果（要求多行结果）使用库方法转换为json格式，并输出。
+2. 截图、提交作业
+3. 之前的任务如果没有完成请尽快完成并提交~今天任务节奏舒缓。
+
+
+## 2018.08.21
+### 1.前端入门
+前端能够为后端数据赋予灵魂，提供极高交互性，并理论上允许世界每一个人更方便使用你写的程序。
+和后端一样，前端也是一个开发发展方向。如果对界面、交互感兴趣的同学可以走这一块，但前端入行难度和后端一样。
+掌握了前端和后端，自己SOLO项目打比赛也方便，毕竟请做好没人带着你做项目的心理准备。  
+虽然也有Bootstrap等前端框架能大幅度加速开发，但基本功必须扎实。
+
+今天需要掌握html基础标签、css基础语法。
+觉得w3school相关太多了，没有个重点请看群里《HTML和CSS入门经典第八版》，入门经典系列都是我特别喜欢的入门书。
+
+[实验楼HTML&CSS](https://www.shiyanlou.com/courses/19)
+[w3school](http://www.w3school.com.cn/html/html_getstarted.asp)
+
+### 2.需要我做什么
+1. 排版并实现[train_html]()静态页面。要求html和css文件分离保存。
+2. 将代码推到github上，截图、提交作业
+3. 之前的任务如果没有完成请尽快完成并提交~
