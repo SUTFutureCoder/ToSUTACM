@@ -93,6 +93,12 @@ Git使用非常简单，想不想学我就不管了。
 - HTML、CSS、JS  
 具体请看[邮件存档](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/acm_newbee_dev.zip)  
 
+### 关注竞赛情报
+有一些情报需要自己去摸索，只在学校里面竞赛是没有竞争力的。
+[中国大学生计算机设计大赛](http://jsjds.ruc.edu.cn/)
+[ACM/ICPC](https://icpc.baylor.edu/)
+[我爱竞赛网](http://www.52jingsai.com/bisai/keji/kfyy/)
+
 对17级暑期工程方向训练内容
 [2018暑期工程方向集训pdf](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/2018_acm_newbee_train.pdf)  
 说实话，从实验室负责人组织度和令人绝望的训练营参与度，真是没救了……请自生自灭吧，实验室合并、爆炸什么的我是不管了。    
