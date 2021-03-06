@@ -13,7 +13,7 @@
 - 想找我或学长求助请尽早，趁着还有救。
 - 觉得自己没救了，就从上到下补啊。
 - 别以为来不及了，我成功辅导过大四疯狂努力绝地反击的。[7~9两个月教学实录](https://github.com/SUTFutureCoder/ToSUTACM/blob/master/%E4%B8%A4%E4%B8%AA%E6%9C%88%E5%AE%9E%E5%BD%95.pdf)  
-- 交叉验证：如果对下文有疑问，请参考[A集团面向BUAA校招录播20210206](https://pan.baidu.com/s/1Ku9nc5E8KgUEAkc9lHVPgw) ,提取码k9fv ; [A集团校招面试宝典20210303](https://pan.baidu.com/s/1EovVdjosK_qK0Rm7cH17jA) , 提取码: nb7b   
+- 交叉验证：如果对下文有疑问，请参考[A集团面向BUAA校招录播20210206](https://pan.baidu.com/s/1Ku9nc5E8KgUEAkc9lHVPgw) ,提取码k9fv ; [A集团校招面试宝典20210303](https://pan.baidu.com/s/1EovVdjosK_qK0Rm7cH17jA) , 提取码: nb7b 。 当然本文是18年写的，虽然很旧、但仍有效。    
 
 ## 好好想想  
 大厂凭什么要录用你？而不是985/211/大硕？事实是只要他们愿意，就能将所有的优质offer抢光。希望这个思考能够贯穿你整个学生时代。  
